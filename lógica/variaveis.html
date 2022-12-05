@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulolinha() {
+        document.write('<br>');
+        document.write('<br>');
+    }
+
+    function mostra(frase) {
+        document.write(frase)
+    }
+    let ano = 2016
+
+    mostra('Adrielly tem ' + (ano - 1977) + ' anos');
+    pulolinha();
+
+    mostra('mateus tem ' + (ano - 1996) + ' anos');
+    pulolinha();
+
+    ano = 2017
+    mostra('Castiel tem ' + (ano - 1976) + ' anos');
+    pulolinha();
+   
+    mostra('olá pessoal!!');
+
+    var idadeAdrielly = 39;
+    var idadeMateus = 20;
+    var idadeCastiel = 41;
+
+    var media = (idadeAdrielly + idadeMateus + idadeCastiel) / 3;
+
+    document.write('A média das idades é ' + Math.round(media) );
+    pulolinha();
+
+    var nome = 'Adrielly'
+
+    document.write('<br>A idade de ' + nome + ' e ' + idadeAdrielly)
+
+</script>

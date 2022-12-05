@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    function pulalinha() {
+        document.write('<br><br>');
+    }
+
+    function mostra(frase) {   
+        document.write(frase);
+        pulalinha();
+    }
+    var totalFamiliares = parseInt(prompt('Quantitades de familiares? '));
+    var numero = 1;
+    var soma = 0
+
+    while(numero <= totalFamiliares){
+       
+        var idade = parseInt(prompt('Qual a idade do familiar? '));
+        soma += idade
+        numero++;
+    }
+    mostra(soma/totalFamiliares)
+    mostra('FIM')
+
+
+</script>

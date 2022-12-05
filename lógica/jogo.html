@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n){
+      return Math.round(Math.random() * n);
+    
+    }
+
+    var numeropensado = sorteia(10);
+
+    mostra('Estou pensando em um numero tente adivinha qual é!!!!')
+    tentavivas = 0
+    while (tentavivas <= 3) {
+        tentavivas++;
+
+        var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+        if(chute == numeropensado) {
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+            tentavivas == 3;
+        } else {
+            mostra("Você errou!")
+            if (numeropensado > chute) {
+                mostra('é maior que ' + chute)
+            } else {
+                mostra('E menor que ' + chute)
+            }
+        }
+    }
+    mostra(numeropensado)
+
+</script>
