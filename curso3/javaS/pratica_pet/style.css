@@ -1,0 +1,102 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background: #a6f4ff; /* colocar a cor na parte de cima */
+    padding: 1px 0; /*para colocar altura e comprimento*/
+}
+
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+nav { /*para colocar os link ao lada da logo*/
+    align-items: center;
+}
+
+nav li{ /*para colocar os link um ao lado do outro*/
+    display: inline;
+    margin: 0 0 0 15px; /*Colocar espeços entre os link*/
+}
+
+nav a {
+    text-transform: uppercase; /*Deixar a letra grande dos link*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: nome;
+
+}
+
+.produtos{ /*Colocar os menus em baixo mais para o lado*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+   
+}
+
+.produtos li:hover{
+    border-color: #5ad5e5;
+    transition: all ease 0.2s;
+    transform: scale(1.1);
+}
+
+.produtosli:active{
+    border-color: #088c19;
+}
+
+.produtos li:haver h2 {
+    font-size: 34px; 
+}
+
+.produtos li{
+    display: inline-block; 
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*Na estrutura de "caixas" do CSS, a borda fica posicionada entre o padding e a margin.*/
+    border-radius: 10px;
+
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos-descricao{
+    font-size: 18px;
+}
+
+.produtos-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagens/rodape_fundo.webp);
+    padding: 10px 0;   
+}
+
+.copyright {
+    font-size: 15PX;
+    margin: 1px 0 0;
+}

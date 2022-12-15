@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vamos brincar!!!</h1>
+    <img src="acb690ce5757a0990217caf94679-1448487.jpg!d" alt="imagem colorida para jogo de adivinhar">
+
+    <header>
+    
+    <p>Vou pensar em um numero de 0 a 10...</p>
+    <!-- tentar colocar umvamos começar -->
+    </header>
+
+    <script>
+        function mostra(frase){
+            alert (frase)
+       
+        }
+        var numeroPensado = Math.round (Math.random() * 10); // o compuntador vai pensar em um numero de 1 a 10 
+
+        tentativas = 0 //contador para vc ter três tentativas
+
+        // para rodar 3 vezes
+        while (tentativas < 3)  { 
+            tentativas ++ // aumento para parar o white
+
+            var chute = (parseInt(prompt ('Pronto, pensei... Tente adivinhar qual é: '))) //entrada do chute
+
+            if (chute > 10 || chute < 0 || chute == NaN) {
+                mostra('Você informou um numero fora do intevalo')
+            }
+            else if (chute == numeroPensado) { //Se chute for igual ao numero pensado
+                mostra('Uau!! você acertou, eu pensei no numero ' + numeroPensado);
+                break // saida imformando q vc acertou
+
+            }
+            else {
+                mostra('Você errou!!') // imformar q vc errou
+                if (numeroPensado > chute) { // falar se o numero pensando é maior q chute
+                    mostra('É maior que ' + chute) // saida se for maior
+                } else{
+                    mostra('É menor que ' + chute) //saide se for menor
+                }
+            }
+            if (tentativas == 3){
+                mostra('O numero pensando foi ' + numeroPensado)
+            }   
+        } 
+
+    </script>
+</body>
+</html>
