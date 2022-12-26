@@ -1,0 +1,50 @@
+/*Alternativa correta! O width é a propriedade que devemos manipular para alterar a largura do elemento*/
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background-color: #CCCCCC;
+    padding: 30px;
+}
+
+.titulo-principal {
+    padding-left: 20px;   
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+p {   
+    text-align: center;    
+}
+
+em strong {
+    color: rgb(82, 47, 237);
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios{
+    background: #ffffff;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+ 
+.imagem {
+    width: 50%;
+}
+
+#missao{
+    font-size: 20px;
+}

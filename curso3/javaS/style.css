@@ -1,55 +1,363 @@
-/*Alternativa correta! O width é a propriedade que devemos manipular para alterar a largura do elemento*/
-
-
-body {       
-     
+header {
+    background: #BBBBBB;
+    padding: 20px 0; 
 }
 
-#banner{
-    width: 100%;
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.principal{
-    background-color: #CCCCCC;
-    padding: 30px;
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
 }
 
-.titulo-principal {
-    padding-left: 20px;   
+nav{ /*vai deixar o meno lado a lado*/
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.titulo-centralizado {
-    text-align: center;
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-p {   
-    text-align: center;    
+nav a {
+   text-transform: uppercase; 
+   color: #000000;
+   font-weight: bold;
+    font-size: 22px;
+    text-decoration: nome;
 }
 
-em strong {
-    color: rgb(82, 47, 237);
+form {
+    margin: 40px 0;
 }
 
-.itens {
-    font-style: italic;
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
 }
 
-.beneficios{
-    background: #ffffff;
-    padding: 20px;
-}
-
-ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
- 
-.imagem {
+form input, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.*/
     width: 50%;
 }
 
-#missao{
-    font-size: 20px;
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
 }
+
+.checkbox {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*:hover, :active, :visited, :required. Tais recursos são utilizados para marcar melhor nossos elementos e gerar um comportamento mais interessante em nosso site.*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+nav{ /*vai deixar o meno lado a lado*/
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+   text-transform: uppercase; 
+   color: #000000;
+   font-weight: bold;
+    font-size: 22px;
+    text-decoration: nome ;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;  
+}
+
+.produtos li:hover{ /*quando o usuário passa o cursor sobre o elemento*/
+    border-color: #c78c19;
+}
+
+.produtos li:active{ /*quando um elemento está sendo ativado pelo usuário*/
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos li {
+    display: inline-block; /* O tamanho pode ser ajustado, tanto na largura, quanto na altura. */
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;  /*O elemento aumenta o seu tamanho. Quando declaro que existe um espaçamento interno, estou aumentando o conteúdo. */  
+    box-sizing: border-box;
+    border: 2px solid #000000; /*Na estrutura de "caixas" do CSS, a borda fica posicionada entre o padding e a margin.*/
+    border-radius: 10px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos-descricao{
+    font-size: 18px;
+}
+
+.produtos-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/*Css da pagina incial*/
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center; /*alinhando ao centro*/
+    font-size: 2em;
+    margin: 0 0 1em; /*espaçamneto da base*/
+    clear: left;
+    /*color: rgba(0, 0, 0, 0.3); para colocar uma sombra na letras */
+    /*text-shadow: 2px 2px red; para colocar sobram na letras*/
+}
+
+/* .titulo-principal:first-letter{ /*para fazer a primeira letra dos titulos ficarem em negrito 
+    font-weight: bold;
+}
+
+/*para pegar o elemento do html antes add content e aspas dupals para add o css
+.titulo-principal:before{
+    content: "[ ";
+}
+.titulo-principal:after {
+    content: " ]"; */
+
+
+p:first-line{
+    font-style: italic; /*para colocar PRIMEIRA FRASE EM ITALICO*/
+}
+
+.principal{
+    padding: 3em 0;
+    background: #fefffe;
+    width: 940%;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px; /*largura da foto*/
+    float: left; /*ara fazermos nossa imagem "flutuar" acessaremos style.css e definiremos em utensilios qual é o lado que desejamos que a flutuação ocorra, neste caso, left.*/
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0; /*para espaçamento*/
+    background: linear-gradient(#fefefe, #888888) ; /*gradiante de pode-se colocar na frente a posição q vc quer e as cores quantas vc quise, para circular radial*/
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.contexto {
+    margin: 0 0 2em;
+    text-align: center; /*para centralizar o texto em cima*/
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+    box-shadow: 10px 10px 10px 0 #000000; /*sombras internas. Utilizaremos a própria sessão de benefícios para exempliciar esse efeito, que será utilizado em box-shadowe se chama *inset*. Seu posicionamento será a partir do centro do elemento e terá a cor vermelha. Para que ela se torne perceptível, criaremos um espaçamento de 30px.*/
+}
+
+.contexto-beneficos {
+    margin: 0 auto;
+}
+
+.lista-beneficos {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+} 
+
+.itens {
+    line-height: 1,5; /*altura da linha ou especamento entre as linhas*/
+}
+
+.itens:first-child{  /*para colocar um elemento em negrito, se colocar 2n vai pegar os pares da lista*/
+    font-weight: bold;
+}
+
+.itens::before{
+    content: "✦ ";
+}
+
+/*seleçao de elementos especificos*/
+.imagem-beneficios {
+    width: 40%; /*60%*/
+    opacity: 1; /*para da um sombra no elemento fazendo com q a luz não chegue diretamente na img*/
+    transform: 400ms;
+    box-shadow: 10px 10px 10px 0 /*uma terceira propriedade chamada blur, em que podemos aplicar um nível de desfoque específico, no caso, inseriremos um valor de 5px. Quanto maior a quantidade de pixels que inserirmos, mais claro sera o efeito de desfoque.*/ #000000; /*-10px -10px yellow, -20px 20px rgba(255,0,0);  /*Continuaremos a usar a imagem da sessão de "Benefícios". A sombra é resultado de um efeito de "luz" que lançaremos sobre o elemento. O nome da propriedade que utilizaremos para gerar esse efeito é box-shadow, que possui a propriedade do eixo X, T e uma cor. Queremos deslocar 10px no eixo X e Y, a cor que utilizaremos será preto.*/
+
+/*Como manipular a opacidade dos elementos, com a propriedade CSS opacity
+Como manipular a opacidade das cores
+Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow
+Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow*/
+}
+.imagem-beneficios:hover{
+    opacity: 0.3; /*quando passar o mouse*/
+
+}
+
+.video{
+    width: 560px; /*altura*/
+    margin: 2em auto; /*para centralizar*/
+}
+
+/*dentro dessa media query que criamos um estilo visual que compreenda telas de até 480px
+Design responsivo: como ajustar o estilo da nossa página de acordo com o tamanho da tela do dispositivo que a acesse
+Meta tag de Viewport
+Media Queries.*/
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+/* main > p{
+    background: red; /*Conseguimos selecionar o primeiro filho com o seletor que acabamos de conhecer, mas neste caso estamos falando do primeiro irmão que vem depois de um elemento.
+}
+img + p { 
+    background: blue;    /* usamos img como elemento âncora e para o primeiro irmão usamos o sinal de "+"
+ }
+
+img ~ p{
+    background: yellow; /*Para selecionar todos os parágrafos localizados depois de uma imagem usamos o seletor ~
+}
+
+.principal p:not(#missao) { /*No CSS podemos, inclusive, excluir itens específicos. Se quisermos excluir todos os parágrafos que não compõe missao, escreveremos:
+    background: orange;
+} 
+
+A exclusão é um elemento poderoso no CSS, principalmente quando realizamos manutenção em algum código que já existe e que não devemos modificar tanto o HTML.*/
